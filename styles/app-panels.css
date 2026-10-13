@@ -33,3 +33,7 @@
 
 .stat-window,.tool-window { border-color:color-mix(in srgb,var(--accent) 82%,white); box-shadow:0 0 8px rgba(var(--accent-rgb),.42),0 0 20px rgba(var(--accent-rgb),.23),inset 0 0 24px rgba(var(--accent-rgb),.08); }
 .tool-card { box-shadow:0 0 9px rgba(var(--accent-rgb),.12),inset 0 0 12px rgba(var(--accent-rgb),.06); }
+
+/* Subtle neon edges on the compact application windows. */
+.stat-window,.tool-window { border-color:color-mix(in srgb,var(--accent) 58%,white); box-shadow:0 0 5px rgba(var(--accent-rgb),.18),0 0 12px rgba(var(--accent-rgb),.09),inset 0 0 12px rgba(var(--accent-rgb),.035); }
+.tool-card { box-shadow:0 0 5px rgba(var(--accent-rgb),.08),inset 0 0 8px rgba(var(--accent-rgb),.035); }
