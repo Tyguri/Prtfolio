@@ -1,0 +1,24 @@
+.animation-intro { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
+.animation-tools { display: grid; align-content: center; gap: .75rem; min-width: 0; }
+.stat-window, .tool-window { min-width: 0; padding: .85rem; border: 1px solid var(--line); border-radius: .45rem; background: var(--surface); }
+.stat-window .eyebrow { margin-bottom: .15rem; }
+.stat-window .stat { display: block; line-height: 1.1; }
+.stat-window .stat-label { margin-bottom: 0; }
+.tool-window-title { margin: 0 0 .65rem; font-size: 1rem; line-height: 1.25; }
+.tool-grid { display: grid; gap: .55rem; }
+.tool-grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.tool-grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.tool-grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tool-card { min-width: 0; display: grid; justify-items: center; align-content: start; gap: .25rem; padding: .55rem .35rem; border: 1px solid var(--soft-line); border-radius: .35rem; text-align: center; }
+.app-icon { display: block; width: 3.25rem; height: 3.25rem; object-fit: cover; border-radius: .7rem; }
+.tool-card h3 { margin: .2rem 0 0; font-size: .88rem; line-height: 1.2; overflow-wrap: anywhere; }
+.tool-card p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.35; }
+.channel-link { display: flex; align-items: center; gap: .65rem; padding: .6rem .75rem; border: 1px solid var(--line); border-radius: .4rem; text-decoration: none; }
+.channel-icon { display: grid; width: 2rem; height: 2rem; place-items: center; border-radius: .35rem; background: #f00; color: #fff; font-size: .9rem; }
+.platform-window { margin-bottom: .65rem; }
+.clothing-intro .copy { align-self: center; }
+.clothing-intro .tool-window { margin-top: 1.2rem; }
+@media (max-width: 760px) {
+  .animation-intro { grid-template-columns: 1fr; }
+  .tool-grid.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
