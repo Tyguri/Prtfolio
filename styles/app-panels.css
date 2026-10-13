@@ -22,3 +22,5 @@
   .animation-intro { grid-template-columns: 1fr; }
   .tool-grid.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+.channel-link.youtube-channel-icon { display: grid; place-items: center; width: 3.25rem; height: 3.25rem; padding: 0; }
+.channel-link.youtube-channel-icon .platform-icon { width: 2.25rem; height: 2.25rem; }
