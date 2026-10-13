@@ -105,3 +105,33 @@ h3 { margin-bottom: .4rem; font-size: 1.1rem; }
 
 .channel-link.youtube-channel-icon { display: grid; place-items: center; width: 3.25rem; height: 3.25rem; padding: 0; }
 .channel-link.youtube-channel-icon .platform-icon { width: 2.25rem; height: 2.25rem; }
+
+/* Dark neon portfolio theme */
+:root { color-scheme: dark; --page:#07050b; --surface:#100b15; --ink:#f7f1fc; --muted:#c1b6cd; --line:rgba(255,35,91,.68); --soft-line:rgba(210,176,227,.23); --accent:#ff285f; --accent-rgb:255,40,95; --accent-two:#bd36ff; --content-width:1120px; }
+body { min-height:100vh; background:radial-gradient(ellipse at 12% 6%,rgba(var(--accent-rgb),.13),transparent 35rem),radial-gradient(ellipse at 94% 35%,rgba(176,40,255,.09),transparent 36rem),#07050b; }
+body.page-pictures, body.page-edits { --accent:#bd36ff; --accent-rgb:189,54,255; --accent-two:#ff285f; }
+.site-header { border-bottom:1px solid var(--line); background:linear-gradient(90deg,rgba(var(--accent-rgb),.10),rgba(16,11,21,.9) 48%,rgba(189,54,255,.08)); box-shadow:0 1px 18px rgba(var(--accent-rgb),.18); }
+.wordmark { display:inline-flex; align-items:center; }
+.site-logo { display:block; width:clamp(120px,15vw,174px); height:54px; object-fit:contain; filter:drop-shadow(0 0 7px rgba(255,37,133,.65)); }
+.site-nav a { border-color:transparent; color:var(--ink); transition:border-color .18s ease,box-shadow .18s ease,background .18s ease,color .18s ease; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { border-color:var(--accent); background:rgba(var(--accent-rgb),.12); color:#fff; box-shadow:0 0 12px rgba(var(--accent-rgb),.30),inset 0 0 10px rgba(var(--accent-rgb),.08); }
+a:focus-visible { outline-color:var(--accent-two); }
+.panel, .tool-window, .stat-window { border-color:var(--line); background:linear-gradient(145deg,rgba(var(--accent-rgb),.045),rgba(16,11,21,.97) 42%); box-shadow:0 0 16px rgba(var(--accent-rgb),.13),inset 0 0 22px rgba(var(--accent-rgb),.025); }
+.eyebrow { color:color-mix(in srgb,var(--accent) 62%,white); }
+.facts div, .item-list li, .simple-card, .tool-card { border-color:var(--soft-line); background:rgba(255,255,255,.025); }
+.facts div { box-shadow:inset 0 0 14px rgba(var(--accent-rgb),.045); }
+.media-slot { border-color:color-mix(in srgb,var(--accent) 66%,transparent); background:linear-gradient(135deg,rgba(var(--accent-rgb),.055),rgba(189,54,255,.045)); box-shadow:inset 0 0 20px rgba(var(--accent-rgb),.06); }
+.destination { transition:transform .2s ease,box-shadow .2s ease; }
+.destination:hover { transform:translateY(-3px); border-color:var(--accent); box-shadow:0 0 23px rgba(var(--accent-rgb),.32); }
+.page-home .destination:first-child { --accent:#ff285f; --accent-rgb:255,40,95; border-color:rgba(255,40,95,.76); background:linear-gradient(145deg,rgba(255,30,82,.17),rgba(16,11,21,.97) 70%); box-shadow:0 0 19px rgba(255,40,95,.17); }
+.page-home .destination:nth-child(2) { --accent:#bd36ff; --accent-rgb:189,54,255; border-color:rgba(189,54,255,.78); background:linear-gradient(145deg,rgba(189,54,255,.17),rgba(16,11,21,.97) 70%); box-shadow:0 0 19px rgba(189,54,255,.17); }
+.page-home .destination:first-child .eyebrow,.page-home .destination:first-child .text-action { color:#ff6c8e; }
+.page-home .destination:nth-child(2) .eyebrow,.page-home .destination:nth-child(2) .text-action { color:#dc91ff; }
+.page-animation .card-grid.three > .panel:nth-child(even) { border-color:rgba(189,54,255,.62); box-shadow:0 0 15px rgba(189,54,255,.12),inset 0 0 20px rgba(189,54,255,.025); }
+.tool-card { transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease; }
+.tool-card:hover { border-color:var(--accent); box-shadow:0 0 13px rgba(var(--accent-rgb),.22); transform:translateY(-2px); }
+.app-icon { box-shadow:0 0 9px rgba(var(--accent-rgb),.2); }
+.social-link,.channel-link { border-color:color-mix(in srgb,var(--accent) 42%,var(--soft-line)); background:rgba(18,12,24,.94); box-shadow:0 0 11px rgba(var(--accent-rgb),.12); transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease; }
+.social-link:hover,.channel-link:hover { border-color:var(--accent); box-shadow:0 0 16px rgba(var(--accent-rgb),.36); transform:translateY(-2px); }
+.site-footer { border-color:var(--line); }
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important; transition-duration:.01ms !important; } }
