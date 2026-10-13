@@ -93,10 +93,12 @@ h3 { margin-bottom: .4rem; font-size: 1.1rem; }
 .social-links { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 1rem; }
 .social-link { display: inline-flex; align-items: center; gap: .5rem; min-height: 2.75rem; padding: .4rem .65rem; border: 1px solid var(--soft-line); border-radius: .4rem; background: var(--surface); text-decoration: none; font-size: .9rem; font-weight: 600; }
 .social-link:hover, .channel-link:hover { border-color: var(--ink); }
-.platform-icon { display: block; width: 1.55rem; height: 1.55rem; flex: 0 0 auto; }
+.platform-icon { display: block; width: 3.25rem; height: 3.25rem; flex: 0 0 auto; }
 .youtube-icon { color: #ff0033; }
 .instagram-icon { color: #c13584; }
 .deviantart-icon { color: #05cc47; }
 .pixiv-icon { color: #0096fa; }
 .channel-link { color: var(--ink); }
-.channel-link .platform-icon { width: 2rem; height: 2rem; }
+.channel-link .platform-icon { width: 3.25rem; height: 3.25rem; }
+
+.platform-links { margin-top: 0; }
