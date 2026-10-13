@@ -205,3 +205,6 @@ body { background:radial-gradient(ellipse at 5% 10%,rgba(var(--accent-rgb),.22),
 .page-animation .card-grid.three > .panel:nth-child(odd) { border-color:rgba(255,67,124,.76); box-shadow:0 0 8px rgba(255,38,106,.3),0 0 18px rgba(255,38,106,.17),inset 0 0 14px rgba(255,38,106,.05); }
 .page-animation .card-grid.three > .panel:nth-child(even) { border-color:rgba(194,95,255,.76); box-shadow:0 0 8px rgba(189,54,255,.32),0 0 18px rgba(189,54,255,.18),inset 0 0 14px rgba(189,54,255,.05); }
 .site-nav a[aria-current="page"] { box-shadow:0 0 6px rgba(var(--accent-rgb),.32),0 0 15px rgba(var(--accent-rgb),.20),inset 0 0 8px rgba(var(--accent-rgb),.08); }
+
+.gender-symbol { display:inline-block; width:1.05em; height:1.05em; vertical-align:-.18em; overflow:visible; }
+.gender-symbol-shadow { transform:translate(1px,1px); }
