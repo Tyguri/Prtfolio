@@ -37,3 +37,7 @@
 /* Subtle neon edges on the compact application windows. */
 .stat-window,.tool-window { border-color:color-mix(in srgb,var(--accent) 58%,white); box-shadow:0 0 5px rgba(var(--accent-rgb),.18),0 0 12px rgba(var(--accent-rgb),.09),inset 0 0 12px rgba(var(--accent-rgb),.035); }
 .tool-card { box-shadow:0 0 5px rgba(var(--accent-rgb),.08),inset 0 0 8px rgba(var(--accent-rgb),.035); }
+
+/* Medium-strength neon edges on tools and statistics windows. */
+.stat-window,.tool-window { border-color:color-mix(in srgb,var(--accent) 68%,white); box-shadow:0 0 8px rgba(var(--accent-rgb),.32),0 0 17px rgba(var(--accent-rgb),.18),inset 0 0 15px rgba(var(--accent-rgb),.05); }
+.tool-card { border-color:color-mix(in srgb,var(--accent) 54%,var(--soft-line)); box-shadow:0 0 7px rgba(var(--accent-rgb),.20),0 0 13px rgba(var(--accent-rgb),.1),inset 0 0 9px rgba(var(--accent-rgb),.04); }
